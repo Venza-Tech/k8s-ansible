@@ -6,7 +6,7 @@ variable "key_name" {
   default = "DevOps-Key"
 }
 variable "vpc_cidr" {
-  default = "172.0.0.0/24"
+  default = "172.31.0.0/16"
 }
 variable "subnets_cidr" {
   type    = list(string)
@@ -17,7 +17,7 @@ variable "availability_zones" {
   default = ["us-east-1d"]
 }
 variable "kubernetes_ami" {
-  default = "ami-090717c950a5c34d3"
+  default = "ami-04ad2567c9e3d7893"
 }
 variable "master_instance_type" {
   default = "t2.medium"
