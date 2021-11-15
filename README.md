@@ -53,6 +53,12 @@ $ sudo yum -y install python3-pip -y
 $ pip3 install ansible --user
 $ pip3 install boto3 --user
 ```
+###Create Ansible Home Dir
+sudo mkdir /etc/ansible
+sudo chowown ansible:ansible -R /etc/ansible
+cd /etc/ansible
+wget https://raw.githubusercontent.com/ansible/ansible/devel/examples/ansible.cfg    # to install ansible.cfg file
+wget https://raw.githubusercontent.com/ansible/ansible/devel/examples/hosts   # to install ansible "hosts: file
 
 #### Clone terraform and ansible scripts
 ``` sh
