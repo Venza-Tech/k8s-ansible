@@ -10,7 +10,7 @@ variable "vpc_cidr" {
 }
 variable "subnets_cidr" {
   type    = list(string)
-  default = ["172.0.0.0/25", "172.0.0.128/25"]
+  default = ["172.31.0.0/16"]
 }
 variable "availability_zones" {
   type    = list(string)
